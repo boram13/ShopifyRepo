@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraising </title>
+    <style>
+        
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+      
+        .details {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+       
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #f8f9fa; 
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar-fill {
+            width: 75%; 
+            height: 100%;
+            background-color: #dc3535;
+        }
+
+        
+        .donate {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .donate input {
+            width: 60px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: green; 
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer .btn {
+            flex: 1;
+            margin-right: 5px;
+        }
+
+        .footer .btn:last-child {
+            margin-right: 0;
+            background-color: gray;
+        }
+
+        .why-link {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    
+    <div class="details">
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+        <p>$167 still needed for this project</p>
+        <p>Only 3 days left to fund this project.</p>
+        <p>Join the 42 other donors who have already supported this project. Every dollar helps.</p>
+    </div>
+    <div class="donate">
+        <div>
+          $<input type="number" value="50" min="1" step="1">
+        </div>
+        <a href="#" class="btn btn-primary">Give Now</a>
+    </div>
+    <p class="why-link"><a href="#">Why give $50?</a></p>
+    <div class="footer">
+        <a href="#" style="color: black;" class="btn">Save for later</a>
+        <a href="#" class="btn">Tell your friends</a>
+    </div>
+</div>
+
+</body>
+</html>
